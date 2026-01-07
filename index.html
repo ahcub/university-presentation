@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Evolution Timeline - Interactive Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Cryptocurrency Evolution Timeline</h1>
+            <p class="subtitle">An Interactive Journey Through Blockchain History</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search events, chains, or keywords...">
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="bitcoin">Bitcoin</button>
+                <button class="filter-btn" data-filter="ethereum">Ethereum</button>
+                <button class="filter-btn" data-filter="defi">DeFi</button>
+                <button class="filter-btn" data-filter="nft">NFTs</button>
+                <button class="filter-btn" data-filter="layer2">Layer 2</button>
+                <button class="filter-btn" data-filter="regulation">Regulation</button>
+                <button class="filter-btn" data-filter="innovation">Innovation</button>
+            </div>
+
+            <div class="ecosystem-toggle">
+                <label>
+                    <input type="checkbox" id="showEcosystems" checked>
+                    Show Ecosystem Lanes
+                </label>
+            </div>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat-card">
+                <div class="stat-number" id="totalEvents">0</div>
+                <div class="stat-label">Total Events</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="ecosystemCount">0</div>
+                <div class="stat-label">Ecosystems</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="yearSpan">0</div>
+                <div class="stat-label">Years of History</div>
+            </div>
+        </div>
+
+        <div class="charts-section">
+            <h2 class="section-title">📊 Crypto Adoption & Market Metrics</h2>
+
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3 class="chart-title">Global Crypto Users (Millions)</h3>
+                    <canvas id="usersChart"></canvas>
+                    <div class="chart-info">Estimated number of cryptocurrency users worldwide</div>
+                </div>
+
+                <div class="chart-container">
+                    <h3 class="chart-title">Daily Trading Volume (Billions USD)</h3>
+                    <canvas id="volumeChart"></canvas>
+                    <div class="chart-info">Average daily trading volume across all exchanges</div>
+                </div>
+
+                <div class="chart-container">
+                    <h3 class="chart-title">Total Market Capitalization (Billions USD)</h3>
+                    <canvas id="marketCapChart"></canvas>
+                    <div class="chart-info">Combined market cap of all cryptocurrencies</div>
+                </div>
+
+                <div class="chart-container">
+                    <h3 class="chart-title">Bitcoin Dominance (%)</h3>
+                    <canvas id="dominanceChart"></canvas>
+                    <div class="chart-info">Bitcoin's share of total crypto market cap</div>
+                </div>
+            </div>
+
+            <div class="metrics-highlights">
+                <div class="metric-highlight">
+                    <div class="metric-icon">👥</div>
+                    <div class="metric-value">580M+</div>
+                    <div class="metric-label">Global Crypto Users (2026)</div>
+                </div>
+                <div class="metric-highlight">
+                    <div class="metric-icon">💰</div>
+                    <div class="metric-value">$5T+</div>
+                    <div class="metric-label">Total Market Cap (2026)</div>
+                </div>
+                <div class="metric-highlight">
+                    <div class="metric-icon">📈</div>
+                    <div class="metric-value">$200B+</div>
+                    <div class="metric-label">Daily Trading Volume</div>
+                </div>
+                <div class="metric-highlight">
+                    <div class="metric-icon">🌍</div>
+                    <div class="metric-value">195+</div>
+                    <div class="metric-label">Countries with Crypto Users</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-container">
+            <div id="timeline"></div>
+        </div>
+
+        <div class="legend">
+            <h3>Event Categories</h3>
+            <div class="legend-items">
+                <div class="legend-item"><span class="legend-color bitcoin"></span> Bitcoin & PoW</div>
+                <div class="legend-item"><span class="legend-color ethereum"></span> Ethereum & Smart Contracts</div>
+                <div class="legend-item"><span class="legend-color defi"></span> DeFi Protocols</div>
+                <div class="legend-item"><span class="legend-color nft"></span> NFTs & Gaming</div>
+                <div class="legend-item"><span class="legend-color layer2"></span> Layer 2 Solutions</div>
+                <div class="legend-item"><span class="legend-color regulation"></span> Regulation & Legal</div>
+                <div class="legend-item"><span class="legend-color innovation"></span> Technical Innovation</div>
+            </div>
+        </div>
+
+        <div id="eventModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Educational resource for understanding cryptocurrency evolution • Data current as of January 2026</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="charts.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
