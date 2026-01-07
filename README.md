@@ -6,6 +6,10 @@ An interactive educational platform exploring the history of cryptocurrency, blo
 
 - **Interactive Timeline**: Explore 17+ years of crypto history with detailed events
 - **Smart Filtering**: Filter by category (Bitcoin, Ethereum, DeFi, NFTs, Layer 2, Regulation, Innovation)
+  - **Sticky Controls**: Filter bar stays visible while scrolling
+  - **Real-Time Feedback**: See "Showing X events" counter update instantly
+  - **Auto-Scroll**: Smoothly scrolls to timeline when filtering
+  - **Visual Highlights**: Timeline section highlights when filters change
 - **Search Functionality**: Find specific events, chains, or keywords instantly
 - **Detailed Event Cards**: Click any event for comprehensive information including impact analysis
 - **Ecosystem Tracking**: Follow the evolution of different blockchain ecosystems
@@ -15,6 +19,7 @@ An interactive educational platform exploring the history of cryptocurrency, blo
   - Total market capitalization evolution
   - Bitcoin dominance over time
 - **Metrics Dashboard**: Key statistics highlighting current crypto adoption
+- **Quick Navigation**: Jump between timeline and charts with one click
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Educational Focus**: Designed as a learning resource with context and impact explanations
 

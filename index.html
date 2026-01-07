@@ -13,34 +13,45 @@
             <p class="subtitle">An Interactive Journey Through Blockchain History</p>
         </header>
 
-        <div class="controls">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search events, chains, or keywords...">
-            </div>
-            
-            <div class="filters">
-                <button class="filter-btn active" data-filter="all">All Events</button>
-                <button class="filter-btn" data-filter="bitcoin">Bitcoin</button>
-                <button class="filter-btn" data-filter="ethereum">Ethereum</button>
-                <button class="filter-btn" data-filter="defi">DeFi</button>
-                <button class="filter-btn" data-filter="nft">NFTs</button>
-                <button class="filter-btn" data-filter="layer2">Layer 2</button>
-                <button class="filter-btn" data-filter="regulation">Regulation</button>
-                <button class="filter-btn" data-filter="innovation">Innovation</button>
-            </div>
+        <div class="controls" id="controls">
+            <div class="controls-inner">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search events, chains, or keywords...">
+                </div>
 
-            <div class="ecosystem-toggle">
-                <label>
-                    <input type="checkbox" id="showEcosystems" checked>
-                    Show Ecosystem Lanes
-                </label>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn bitcoin" data-filter="bitcoin">Bitcoin</button>
+                    <button class="filter-btn ethereum" data-filter="ethereum">Ethereum</button>
+                    <button class="filter-btn defi" data-filter="defi">DeFi</button>
+                    <button class="filter-btn nft" data-filter="nft">NFTs</button>
+                    <button class="filter-btn layer2" data-filter="layer2">Layer 2</button>
+                    <button class="filter-btn regulation" data-filter="regulation">Regulation</button>
+                    <button class="filter-btn innovation" data-filter="innovation">Innovation</button>
+                </div>
+
+                <div class="filter-feedback">
+                    <div class="results-counter" id="resultsCounter">
+                        Showing <strong id="eventCount">0</strong> events
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="timeline-container" id="timelineSection">
+            <div class="timeline-header">
+                <h2 class="timeline-title">📅 Event Timeline</h2>
+                <button class="jump-btn" onclick="document.getElementById('chartsSection').scrollIntoView({behavior: 'smooth'})">
+                    📊 View Charts & Metrics
+                </button>
+            </div>
+            <div id="timeline"></div>
         </div>
 
         <div class="stats-panel">
             <div class="stat-card">
                 <div class="stat-number" id="totalEvents">0</div>
-                <div class="stat-label">Total Events</div>
+                <div class="stat-label">Total Events in Database</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" id="ecosystemCount">0</div>
@@ -52,7 +63,7 @@
             </div>
         </div>
 
-        <div class="charts-section">
+        <div class="charts-section" id="chartsSection">
             <h2 class="section-title">📊 Crypto Adoption & Market Metrics</h2>
 
             <div class="charts-grid">
@@ -103,10 +114,6 @@
                     <div class="metric-label">Countries with Crypto Users</div>
                 </div>
             </div>
-        </div>
-
-        <div class="timeline-container">
-            <div id="timeline"></div>
         </div>
 
         <div class="legend">
