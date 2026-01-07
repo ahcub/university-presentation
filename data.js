@@ -3,21 +3,21 @@ const cryptoTimeline = [
         year: 2009,
         events: [
             {
-                date: "January 3, 2009",
-                title: "Bitcoin Genesis Block",
-                description: "Satoshi Nakamoto mines the first Bitcoin block, embedding the message 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'. This marks the birth of cryptocurrency.",
+                date: "3 січня 2009",
+                title: "Генезис-блок Bitcoin",
+                description: "Сатоші Накамото видобуває перший блок Bitcoin, вбудовуючи повідомлення 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'. Це знаменує народження криптовалюти.",
                 category: "bitcoin",
-                tags: ["Bitcoin", "Blockchain", "Proof of Work"],
-                impact: "Revolutionary - Created the first decentralized digital currency",
+                tags: ["Bitcoin", "Блокчейн", "Proof of Work"],
+                impact: "Революційно - створено першу децентралізовану цифрову валюту",
                 ecosystem: "Bitcoin"
             },
             {
-                date: "January 12, 2009",
-                title: "First Bitcoin Transaction",
-                description: "Satoshi Nakamoto sends 10 BTC to Hal Finney, marking the first peer-to-peer Bitcoin transaction in history.",
+                date: "12 січня 2009",
+                title: "Перша транзакція Bitcoin",
+                description: "Сатоші Накамото надсилає 10 BTC Хелу Фінні, що стало першою peer-to-peer транзакцією Bitcoin в історії.",
                 category: "bitcoin",
-                tags: ["Bitcoin", "Transaction", "P2P"],
-                impact: "Proved the viability of peer-to-peer digital cash",
+                tags: ["Bitcoin", "Транзакція", "P2P"],
+                impact: "Довів життєздатність peer-to-peer цифрових грошей",
                 ecosystem: "Bitcoin"
             }
         ]
@@ -26,21 +26,21 @@ const cryptoTimeline = [
         year: 2010,
         events: [
             {
-                date: "May 22, 2010",
-                title: "Bitcoin Pizza Day",
-                description: "Laszlo Hanyecz purchases two pizzas for 10,000 BTC, the first real-world Bitcoin transaction. This day is now celebrated annually as Bitcoin Pizza Day.",
+                date: "22 травня 2010",
+                title: "День Bitcoin-піци",
+                description: "Ласло Ханєч купує дві піци за 10,000 BTC - перша реальна транзакція Bitcoin. Цей день тепер щорічно святкується як День Bitcoin-піци.",
                 category: "bitcoin",
-                tags: ["Bitcoin", "Adoption", "Historic"],
-                impact: "First real-world commercial use of Bitcoin",
+                tags: ["Bitcoin", "Прийняття", "Історичне"],
+                impact: "Перше комерційне використання Bitcoin у реальному світі",
                 ecosystem: "Bitcoin"
             },
             {
-                date: "July 18, 2010",
-                title: "Mt. Gox Exchange Launches",
-                description: "Mt. Gox, originally a Magic: The Gathering trading card exchange, pivots to become a Bitcoin exchange. It would later handle 70% of all Bitcoin transactions.",
+                date: "18 липня 2010",
+                title: "Запуск біржі Mt. Gox",
+                description: "Mt. Gox, спочатку біржа торгових карток Magic: The Gathering, перетворюється на біржу Bitcoin. Пізніше вона обробляла 70% всіх транзакцій Bitcoin.",
                 category: "bitcoin",
-                tags: ["Exchange", "Trading", "Infrastructure"],
-                impact: "Established centralized exchange model",
+                tags: ["Біржа", "Торгівля", "Інфраструктура"],
+                impact: "Встановила модель централізованої біржі",
                 ecosystem: "Bitcoin"
             }
         ]

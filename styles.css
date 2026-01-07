@@ -34,12 +34,35 @@ body {
 }
 
 header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
     padding: 40px 20px;
     background: linear-gradient(135deg, rgba(247, 147, 26, 0.1) 0%, rgba(98, 126, 234, 0.1) 100%);
     border-radius: 20px;
     margin-bottom: 30px;
     border: 1px solid var(--border-color);
+}
+
+.logo-container {
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 4px 12px rgba(98, 126, 234, 0.3));
+    animation: logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.header-text {
+    text-align: center;
 }
 
 header h1 {
@@ -566,8 +589,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
     header h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .controls {

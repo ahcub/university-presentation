@@ -40,7 +40,7 @@ function renderTimeline() {
     updateEventCounter(totalFilteredEvents);
 
     if (filteredTimeline.length === 0) {
-        timelineContainer.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-secondary);">No events found matching your criteria.</div>';
+        timelineContainer.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-secondary);">Не знайдено подій, що відповідають вашим критеріям.</div>';
         return;
     }
 
@@ -214,7 +214,7 @@ function showEventModal(event) {
         </div>
 
         <div style="margin-bottom: 25px;">
-            <h3 style="color: var(--text-primary); margin-bottom: 10px;">Description</h3>
+            <h3 style="color: var(--text-primary); margin-bottom: 10px;">Опис</h3>
             <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">
                 ${event.description}
             </p>
@@ -223,7 +223,7 @@ function showEventModal(event) {
         ${event.impact ? `
             <div style="background: rgba(98, 126, 234, 0.1); padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid rgba(98, 126, 234, 0.2);">
                 <h3 style="color: var(--ethereum-color); margin-bottom: 8px; font-size: 0.95rem;">
-                    💡 Impact
+                    💡 Вплив
                 </h3>
                 <p style="color: var(--text-primary); line-height: 1.6;">
                     ${event.impact}
@@ -232,14 +232,14 @@ function showEventModal(event) {
         ` : ''}
 
         <div style="margin-bottom: 20px;">
-            <h3 style="color: var(--text-primary); margin-bottom: 10px; font-size: 0.95rem;">Ecosystem</h3>
+            <h3 style="color: var(--text-primary); margin-bottom: 10px; font-size: 0.95rem;">Екосистема</h3>
             <span style="display: inline-block; padding: 8px 16px; background: ${color}; color: white; border-radius: 20px; font-weight: 600;">
-                ${event.ecosystem || 'Multi-chain'}
+                ${event.ecosystem || 'Мультиланцюг'}
             </span>
         </div>
 
         <div>
-            <h3 style="color: var(--text-primary); margin-bottom: 10px; font-size: 0.95rem;">Tags</h3>
+            <h3 style="color: var(--text-primary); margin-bottom: 10px; font-size: 0.95rem;">Теги</h3>
             <div style="display: flex; flex-wrap: wrap; gap: 8px;">
                 ${event.tags.map(tag => `
                     <span style="padding: 6px 14px; background: var(--bg-dark); border: 1px solid var(--border-color); border-radius: 15px; font-size: 0.85rem; color: var(--text-secondary);">
